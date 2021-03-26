@@ -47,7 +47,7 @@ class DotCleanup():
         pointsOnLine = self.getPointsInLine(start, end)
         pointOnLineStep = len(pointsOnLine) / divisions
         for i in range(1, pointsToIntroduce + 1):
-            line.append(pointsOnLine[pointOnLineStep * i])
+            line.append(pointsOnLine[int(pointOnLineStep) * i])
 
         return line
 

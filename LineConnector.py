@@ -10,7 +10,7 @@ class LineConnector():
 
     def __init__(self, lines):
         self.lines = lines
-        self.indexes = range(len(lines) * 2)
+        self.indexes = list(range(len(lines) * 2))
         self.coords = []
         for line in lines:
             start = line[0]
@@ -81,13 +81,13 @@ class LineConnector():
 
     def pointToLineIndex(self, point):
         for i in range(len(self.indexes)):
-            if point in self.lines[i / 2]:
+            if point in self.lines[int(i / 2)]:
                 return i
 
     def solutionIndexesToLines(self, indexes):
         lines = []
         for i in indexes:
-            line = self.lines[i / 2]
+            line = self.lines[int(i / 2)]
             line = line[:]
             if i % 2 == 1:
                 line.reverse()

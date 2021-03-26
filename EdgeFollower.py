@@ -47,7 +47,7 @@ class EdgeFollower():
         print('Done')
         return traces
 
-    def makeTrace(self, startingPoint, limit = sys.maxint, persistent = True):
+    def makeTrace(self, startingPoint, limit = sys.maxsize, persistent = True):
         self.edgeMatrix.markFalseAt(startingPoint)
         trace = [startingPoint]
         nextNeighbours = self.edgeMatrix.getTrueNeighbours(startingPoint)

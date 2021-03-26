@@ -2,7 +2,6 @@ import os
 import sys
 import time
 from PIL import Image
-
 from EdgeDetector import EdgeDetector
 from EdgeMatrix import EdgeMatrix
 from EdgeFollower import EdgeFollower
@@ -18,9 +17,9 @@ TEMP_IMG_NAME = "temp_img.jpg"
 GREEDY_SOLUTIONS_TO_TRY = 50
 
 def timeFunction(function, *args):
-    start = time.clock()
+    start = time.time()
     returnValue = function(*args)
-    end = time.clock()
+    end = time.time()
     print ('--- ' + str(function.__name__) + ' --- Time: ' + str(end - start) + ' ---')
     return returnValue
 
