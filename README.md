@@ -6,7 +6,11 @@ Read more about the project **[here](https://medium.com/@oliverstenbom/worlds-la
 To use, clone the repository with `git clone https://github.com/ostenbom/dot-to-dot.git`, install requirements (you'll particularly need a Cairo binding like cairocffi and Pillow). Then run:
 
 ```
-python Main.py path/to/image.jpg
+python3 -m venv venv
+source venv/bin/activate or on windows C:\> venv\Scripts\activate.bat
+pip install -r requirements.txt
+python3 Main.py ./testimages/taxi.jpg
 ```
 
+You can find the output on the director /out/dots.png
 If you'd like to know more about how it works, reading DotToDot.py is a good start! Also the medium article I wrote, more documentation coming soon.
