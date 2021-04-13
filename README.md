@@ -11,6 +11,6 @@ pip install -r requirements.txt
 python3 Main.py ./testimages/Bulbasaur.png true
 
 ## Output
-|<img src="testimages/Bulbasaur.png" width="250">|<img src="intermediate/notClean.jpg" width="250">|
+<img src="testimages/Bulbasaur.png" width="250"><img src="intermediate/notClean.jpg" width="250">
 
 there will be also a PDF without lines under intermediate/notclean.pdf
