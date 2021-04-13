@@ -1,12 +1,16 @@
 # dot-to-dot
-Converts images into full dot to dot puzzles.
+Original repository creator:
+https://github.com/ostenbom/dot-to-dot.git
 
-Read more about the project **[here](https://medium.com/@oliverstenbom/worlds-largest-dot-to-dot-4babe597dfeb)**
+I have upgraded so you can use it with Python3
+Solved an issue where the generated image would come with lines attached to it.
 
-To use, clone the repository with `git clone https://github.com/ostenbom/dot-to-dot.git`, install requirements (you'll particularly need a Cairo binding like cairocffi and Pillow). Then run:
+python3 -m venv venv
+source venv/bin/activate or on windows C:\> venv\Scripts\activate.bat
+pip install -r requirements.txt
+python3 Main.py ./testimages/Bulbasaur.png true
 
-```
-python Main.py path/to/image.jpg
-```
+## Output
+|<img src="testimages/Bulbasaur.png">|<img src="intermediate/notClean.jpg">|
 
-If you'd like to know more about how it works, reading DotToDot.py is a good start! Also the medium article I wrote, more documentation coming soon.
+there will be also a PDF without lines under intermediate/notclean.pdf
